@@ -23,11 +23,11 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
   res.send("API Funcionando!")
 })
-app.use("/Usuarios", usuariosRoutes);
-app.use("/Reservas", reservaRoutes);
-app.use("/Favoritos", favoritosRoutes);
-app.use("/Avaliacoes", avaliacoesRoutes);
-app.use("/Livros", livrosRoutes); 
+app.use("/usuarios", usuariosRoutes);
+app.use("/reservas", reservaRoutes);
+app.use("/favoritos", favoritosRoutes);
+app.use("/avaliacoes", avaliacoesRoutes);
+app.use("/livros", livrosRoutes); 
 
 
 

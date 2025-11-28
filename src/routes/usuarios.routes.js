@@ -8,12 +8,12 @@ import
 
       import express from "express";
 
-      const routes = express.Router();
+      const router = express.Router();
       
-routes.get("/", listaUsuario);
-routes.post("/", CriarUsuario);
-routes.get("/:id", obterUsuario);
-routes.put("/:id", atualizaUsuario);
-routes.delete("/:id", deletarUsuario);
+router.get("/", listaUsuario);
+router.post("/", CriarUsuario);
+router.get("/:id", obterUsuario);
+router.put("/:id", atualizaUsuario);
+router.delete("/:id", deletarUsuario);
 
-export default routes;
+export default router;
